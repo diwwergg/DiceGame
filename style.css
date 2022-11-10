@@ -1,0 +1,131 @@
+
+body{
+    background-color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.box-container {
+    display: block;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(248, 232, 0, 0.822);
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* filter top buttom left right is shadow yellow*/
+    box-shadow: 10px 0px 100px 39px rgba(248, 232, 0, 0.822);
+    
+}
+
+.big-text{
+    font-size: 60px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.game-zone{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.player{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.big-white-text{
+    position: relative;
+    font-size: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.normal-white-text{
+    font-size: 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.vs {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: relative;
+}
+
+.big-btn{ 
+    width: 120px;
+    height: 120px;
+}
+
+.btn-opaxity{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+.btn-opaxity:hover{
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.2);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn-opaxity:active{
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(0.9);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.box-dice{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 155px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10%;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 5px solid white;
+}
