@@ -7,20 +7,18 @@ let score2J = document.getElementById("score2");
 let p1WinStreakJ = document.getElementById("p1WinStreak");
 let p2WinStreakJ = document.getElementById("p2WinStreak");
 
-
+let rollDiceBtnText = document.getElementById("rollDiceBtnText");
 // JQuery Button
 let rollDiceBtn = document.getElementById("rollDiceBtn"); 
 let resetBtn = document.getElementById("resetBtn");
 
 // VARIABLES
-
 let p1WinStreak = 0;
 let p2WinStreak = 0;
 let drawStreak = 0;
 
 let p1 = 0;
 let p2 = 0;
-
 
 const diceFace = {
     0: "gg-dice",
@@ -92,6 +90,7 @@ function showDice() {
 }
 function showText() {
     bigTextShowJ.innerHTML = compareice(p1, p2);
+    rollDiceBtnText.innerHTML = "Roll Dice";
     score1J.innerHTML = p1;
     score2J.innerHTML = p2;
     p1WinStreakJ.innerHTML = p1WinStreak;
@@ -99,5 +98,7 @@ function showText() {
 }
 
 // JQuery Button Click
-rollDiceBtn.addEventListener("click", mainRun);
+rollDiceBtn.addEventListener("click", function () {
+    mainRun();
+});
 resetBtn.addEventListener("click", resetScore);
