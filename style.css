@@ -1,7 +1,16 @@
 
+
+
 body{
     background-color: black;
+    background-image: url("Images/dice.webp");
+    object-fit: cover;
     font-family: "Lucida Console", "Courier New", monospace;
+    min-height: 100vh;
+    position: relative;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-container {
@@ -11,12 +20,12 @@ body{
     height: auto;
     margin: 0 auto;
     padding: 0;
-    background-color: rgba(248, 232, 0, 0.822);
+    background-color: rgba(248, 232, 0, 0.521);
     align-items: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    /* top: 25%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     border-radius: 20px;
     /* filter top buttom left right is shadow yellow*/
     box-shadow: 10px 0px 100px 39px rgba(248, 232, 0, 0.822);
@@ -29,7 +38,7 @@ body{
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 0;
+    margin: 15px 0;
     padding: 0;
 }
 
@@ -93,7 +102,7 @@ body{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.623);
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 10px 10px;
     cursor: pointer;
     border: 5px solid white;
 }
@@ -123,9 +132,53 @@ body{
     align-items: center;
     width: 155px;
     height: 155px;
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: rgba(255, 255, 255, 0.856);
     border-radius: 10%;
     margin: 10px auto;
     cursor: pointer;
     border: 5px solid white;
+}
+
+
+.resetC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom:-10px; 
+    left:50%; 
+    transform: translate(-50%, -50%);
+}
+
+/* responsive 720px */
+@media screen and (max-width: 720px) {
+    .game-zone{
+        flex-direction: column;
+    }
+    .box-container{
+        max-width: 80%;
+        max-height: auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .player{
+        width: 200px;
+        height: 200px;
+        /* margin: 0; */
+    }
+    .resetC{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+    .big-text{
+        margin-top: 25px;
+    }
+    .big-white-text{
+        font-size: 30px;
+    }
+    
+    
 }

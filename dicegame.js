@@ -39,10 +39,10 @@ function rollDice() {
 function compareice(p1, p2) {
     if (p1 > p2) {
         p1WinStreak++;
-        return "Player1 Wins";
+        return "Player 1 Wins";
     } else if (p1 < p2) {
         p2WinStreak++;
-        return "Player2 Wins";
+        return "Player 2 Wins";
     } else if (p1+p2 == 0) {
         return "Dice Game";
     }else{
